@@ -1,0 +1,14 @@
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+    appearance: none !important;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+}
+
+.btnA{
+    padding-left: 29px;
+    padding-right: 29px;
+    height: 53px;
+}
