@@ -7,8 +7,32 @@ button,
     -webkit-appearance: none !important;
 }
 
-.btnA{
+.btnA {
     padding-left: 29px;
     padding-right: 29px;
     height: 53px;
+
+    &.white-border-btn {
+        background-color: transparent;
+        border: 1px solid $white;
+        color: $white;
+
+        &:hover {
+            background-color: $white;
+            border: 1px solid transparent;
+            color: $color-1B2995;
+        }
+    }
+
+    &.bg-1B2995-btn {
+        background-color: $color-1B2995;
+        border: 1px solid transparent;
+        color: $white;
+
+        &:hover {
+            background-color: transparent;
+            border: 1px solid $color-1B2995;
+            color: $color-1B2995;
+        }
+    }
 }
