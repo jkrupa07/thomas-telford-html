@@ -17767,6 +17767,10 @@ footer .footer-main ul li:last-child {
   height: 694px;
 }
 
+.contact-us-section .label-bg {
+  background-color: rgba(133, 138, 181, 0.2);
+}
+
 .left-right-section .left-right-img {
   height: 633px;
 }
