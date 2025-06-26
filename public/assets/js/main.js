@@ -20433,7 +20433,44 @@ var Plugins = /*#__PURE__*/function () {
   }
   plugins_createClass(Plugins, [{
     key: "init",
-    value: function init() {}
+    value: function init() {
+      this.UpcomingSlider();
+    }
+  }, {
+    key: "UpcomingSlider",
+    value: function UpcomingSlider() {
+      console.log('slider');
+      $(document).ready(function () {
+        $(".upcoming-slider").slick({
+          dots: false,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          arrows: false,
+          autoplay: true,
+          responsive: [{
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          }, {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          }, {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }]
+        });
+      });
+    }
   }]);
   return Plugins;
 }();
@@ -20554,7 +20591,39 @@ var Privacy = /*#__PURE__*/function () {
   }]);
   return Privacy;
 }();
+;// CONCATENATED MODULE: ./src/js/parts/select.js
+function select_typeof(obj) { "@babel/helpers - typeof"; return select_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, select_typeof(obj); }
+function select_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function select_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, select_toPropertyKey(descriptor.key), descriptor); } }
+function select_createClass(Constructor, protoProps, staticProps) { if (protoProps) select_defineProperties(Constructor.prototype, protoProps); if (staticProps) select_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function select_toPropertyKey(arg) { var key = select_toPrimitive(arg, "string"); return select_typeof(key) === "symbol" ? key : String(key); }
+function select_toPrimitive(input, hint) { if (select_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (select_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+var Select = /*#__PURE__*/function () {
+  function Select() {
+    select_classCallCheck(this, Select);
+  }
+  select_createClass(Select, [{
+    key: "init",
+    value: function init() {
+      this.GetFormSelect();
+    }
+  }, {
+    key: "GetFormSelect",
+    value: function GetFormSelect() {
+      $(".js-select2").select2({
+        closeOnSelect: true,
+        minimumResultsForSearch: Infinity,
+        allowClear: false,
+        dropdownCssClass: "categories-select2",
+        templateResult: formatState,
+        templateSelection: formatState
+      });
+    }
+  }]);
+  return Select;
+}();
 ;// CONCATENATED MODULE: ./src/js/main.js
+
 
 
 
@@ -20591,6 +20660,8 @@ jquery_default()(function () {
   window.accordion.init();
   window.privacy = new Privacy();
   window.privacy.init();
+  window.select = new Select();
+  window.select.init();
 });
 
 // ===========================================================================

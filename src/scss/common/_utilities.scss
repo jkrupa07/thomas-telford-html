@@ -190,6 +190,10 @@
     border-radius: $radius15;
 }
 
+.opacity36 {
+    opacity: $opacity36;
+}
+
 @include media-breakpoint-down(lg) {
     .res-font12 {
         font-size: $font12;
