@@ -11,6 +11,7 @@ import { Truncate } from './parts/truncate.js';
 import { Accordion } from './parts/accordion.js';
 import { Privacy } from './parts/privacy.js';
 import { Header } from './parts/header.js';
+import { Select } from './parts/select.js';
 
 // export for others scripts to use
 window.$ = $;
@@ -47,6 +48,9 @@ $(function () {
 
   window.header = new Header();
   window.header.init();
+  
+  window.select = new Select();
+  window.select.init();
 });
 
 // ===========================================================================

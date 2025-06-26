@@ -24,6 +24,18 @@ button,
         }
     }
 
+    &.white-black-border-btn {
+        background-color: transparent;
+        border: 1px solid $white;
+        color: $white;
+
+        &:hover {
+            background-color: $white;
+            border: 1px solid transparent;
+            color: $black;
+        }
+    }
+
     &.bg-1B2995-btn {
         background-color: $color-1B2995;
         border: 1px solid transparent;

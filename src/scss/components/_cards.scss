@@ -29,3 +29,20 @@
         }
     }
 }
+
+.two-cards {
+    .two-card {
+        height: 506px;
+
+        .two-card-layer {
+            height: 140px;
+            background-image: linear-gradient(180deg, #00000000, #000000);
+            opacity: 60%;
+        }
+
+        .two-card-content {
+            padding-left: 38px;
+            padding-right: 30px;
+        }
+    }
+}

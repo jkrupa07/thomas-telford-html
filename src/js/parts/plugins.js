@@ -10,7 +10,7 @@ export class Plugins {
   UpcomingSlider() {
     console.log('slider');
     $(document).ready(function () {
-      
+
       $(".upcoming-slider").slick({
         dots: false,
         infinite: true,
@@ -18,6 +18,7 @@ export class Plugins {
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows: false,
+        autoplay: true,
         responsive: [
           {
             breakpoint: 1024,

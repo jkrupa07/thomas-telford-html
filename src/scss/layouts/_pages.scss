@@ -6,3 +6,16 @@
     width: 45px;
     height: 45px;
 }
+
+.get-in-touch-section {
+    .pattern-img {
+        height: 720px;
+        left: -22%;
+        transform: translate(35px, 48%);
+
+        @media screen and (max-width:1440px) {
+            left: -30%;
+            transform: translate(35px, 48%);
+        }
+    }
+}
