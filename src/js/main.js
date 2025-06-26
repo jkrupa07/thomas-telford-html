@@ -11,7 +11,6 @@ import { Truncate } from './parts/truncate.js';
 import { Accordion } from './parts/accordion.js';
 import { Privacy } from './parts/privacy.js';
 
-
 // export for others scripts to use
 window.$ = $;
 window.jQuery = jQuery;
