@@ -20554,7 +20554,38 @@ var Privacy = /*#__PURE__*/function () {
   }]);
   return Privacy;
 }();
+;// CONCATENATED MODULE: ./src/js/parts/header.js
+function header_typeof(obj) { "@babel/helpers - typeof"; return header_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, header_typeof(obj); }
+function header_classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function header_defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, header_toPropertyKey(descriptor.key), descriptor); } }
+function header_createClass(Constructor, protoProps, staticProps) { if (protoProps) header_defineProperties(Constructor.prototype, protoProps); if (staticProps) header_defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function header_toPropertyKey(arg) { var key = header_toPrimitive(arg, "string"); return header_typeof(key) === "symbol" ? key : String(key); }
+function header_toPrimitive(input, hint) { if (header_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (header_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+var Header = /*#__PURE__*/function () {
+  function Header() {
+    header_classCallCheck(this, Header);
+  }
+  header_createClass(Header, [{
+    key: "init",
+    value: function init() {
+      this.MegaMenu();
+    }
+  }, {
+    key: "MegaMenu",
+    value: function MegaMenu() {
+      $(".mega-link").hover(function () {
+        $(this).addClass("mega-active");
+        $("header").addClass("header-active");
+      }, function () {
+        $(this).removeClass("mega-active");
+        $("header").removeClass("header-active");
+      });
+    }
+  }]);
+  return Header;
+}();
 ;// CONCATENATED MODULE: ./src/js/main.js
+
 
 
 
@@ -20591,6 +20622,8 @@ jquery_default()(function () {
   window.accordion.init();
   window.privacy = new Privacy();
   window.privacy.init();
+  window.header = new Header();
+  window.header.init();
 });
 
 // ===========================================================================

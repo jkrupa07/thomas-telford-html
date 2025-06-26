@@ -14444,7 +14444,7 @@ progress {
   font-family: "dmsans-medium";
 }
 
-.sans {
+.sans-normal {
   font-family: "dmsans-regular";
 }
 
@@ -17476,6 +17476,15 @@ textarea {
   padding-right: 0px;
 }
 
+.row8 {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.row8 > * {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
 .w-fit {
   width: fit-content;
 }
@@ -17691,31 +17700,31 @@ textarea {
 }
 
 .leading20 {
-  line-height: 26px;
-}
-
-.leading24 {
-  line-height: 55px;
-}
-
-.leading26 {
-  line-height: 38px;
-}
-
-.leading36 {
-  line-height: 85px;
-}
-
-.leading38 {
-  line-height: 36px;
-}
-
-.leading55 {
   line-height: 20px;
 }
 
-.leading85 {
+.leading24 {
   line-height: 24px;
+}
+
+.leading26 {
+  line-height: 26px;
+}
+
+.leading36 {
+  line-height: 36px;
+}
+
+.leading38 {
+  line-height: 38px;
+}
+
+.leading55 {
+  line-height: 55px;
+}
+
+.leading85 {
+  line-height: 85px;
 }
 
 .leading95 {
@@ -17816,25 +17825,25 @@ textarea {
     letter-spacing: 1.78px;
   }
   .res-leading20 {
-    line-height: 26px;
-  }
-  .res-leading24 {
-    line-height: 55px;
-  }
-  .res-leading26 {
-    line-height: 38px;
-  }
-  .res-leading36 {
-    line-height: 85px;
-  }
-  .res-leading38 {
-    line-height: 36px;
-  }
-  .res-leading55 {
     line-height: 20px;
   }
-  .res-leading85 {
+  .res-leading24 {
     line-height: 24px;
+  }
+  .res-leading26 {
+    line-height: 26px;
+  }
+  .res-leading36 {
+    line-height: 36px;
+  }
+  .res-leading38 {
+    line-height: 38px;
+  }
+  .res-leading55 {
+    line-height: 55px;
+  }
+  .res-leading85 {
+    line-height: 85px;
   }
   .res-leading95 {
     line-height: 95px;
@@ -17869,6 +17878,26 @@ button,
   padding-right: 29px;
   height: 53px;
 }
+.btnA.white-border-btn {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.btnA.white-border-btn:hover {
+  background-color: #fff;
+  border: 1px solid transparent;
+  color: #1B2995;
+}
+.btnA.bg-1B2995-btn {
+  background-color: #1B2995;
+  border: 1px solid transparent;
+  color: #fff;
+}
+.btnA.bg-1B2995-btn:hover {
+  background-color: transparent;
+  border: 1px solid #1B2995;
+  color: #1B2995;
+}
 
 .card-hover .img {
   transform: scale(1);
@@ -17878,11 +17907,29 @@ button,
   transform: scale(1.1);
 }
 
+header {
+  box-shadow: 0px 0px 10px #0F1964;
+}
 header .header-top .clock-img img {
   height: 17px;
 }
 header .header-main .white-logo {
   width: 137px;
+}
+header ul li:last-child {
+  padding-right: 0 !important;
+}
+header .mega-link.mega-active .mega-menu {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+header .mega-link.mega-active .menu-link {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  padding-inline: 15px 8px;
+}
+header .mega-menu {
+  width: max-content;
 }
 
 .bg-1B2995-label {
