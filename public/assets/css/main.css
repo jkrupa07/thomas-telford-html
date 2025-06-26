@@ -17668,35 +17668,35 @@ textarea {
 }
 
 .space-0_12 {
-  letter-spacing: 0.12px;
+  letter-spacing: -0.12px;
 }
 
 .space-0_16 {
-  letter-spacing: 0.16px;
+  letter-spacing: -0.16px;
 }
 
 .space-0_36 {
-  letter-spacing: 0.36px;
+  letter-spacing: -0.36px;
 }
 
 .space-0_42 {
-  letter-spacing: 0.42px;
+  letter-spacing: -0.42px;
 }
 
 .space-0_48 {
-  letter-spacing: 0.48px;
+  letter-spacing: -0.48px;
 }
 
 .space-0_54 {
-  letter-spacing: 0.54px;
+  letter-spacing: -0.54px;
 }
 
 .space-0_72 {
-  letter-spacing: 0.72px;
+  letter-spacing: -0.72px;
 }
 
 .space-1_78 {
-  letter-spacing: 1.78px;
+  letter-spacing: -1.78px;
 }
 
 .leading20 {
@@ -17721,6 +17721,10 @@ textarea {
 
 .leading55 {
   line-height: 55px;
+}
+
+.leading67 {
+  line-height: 67px;
 }
 
 .leading85 {
@@ -17801,28 +17805,28 @@ textarea {
     letter-spacing: -0.9px;
   }
   .res-space-0_12 {
-    letter-spacing: 0.12px;
+    letter-spacing: -0.12px;
   }
   .res-space-0_16 {
-    letter-spacing: 0.16px;
+    letter-spacing: -0.16px;
   }
   .res-space-0_36 {
-    letter-spacing: 0.36px;
+    letter-spacing: -0.36px;
   }
   .res-space-0_42 {
-    letter-spacing: 0.42px;
+    letter-spacing: -0.42px;
   }
   .res-space-0_48 {
-    letter-spacing: 0.48px;
+    letter-spacing: -0.48px;
   }
   .res-space-0_54 {
-    letter-spacing: 0.54px;
+    letter-spacing: -0.54px;
   }
   .res-space-0_72 {
-    letter-spacing: 0.72px;
+    letter-spacing: -0.72px;
   }
   .res-space-1_78 {
-    letter-spacing: 1.78px;
+    letter-spacing: -1.78px;
   }
   .res-leading20 {
     line-height: 20px;
@@ -17874,8 +17878,8 @@ button,
 }
 
 .btnA {
-  padding-left: 29px;
-  padding-right: 29px;
+  padding-left: 38px;
+  padding-right: 38px;
   height: 53px;
 }
 .btnA.white-border-btn {
@@ -17907,6 +17911,19 @@ button,
   transform: scale(1.1);
 }
 
+.upcoming-cards .upcoming-card .upcoming-img {
+  height: 327px;
+}
+.upcoming-cards .upcoming-card .upcoming-img .date-label {
+  margin: 12px;
+}
+.upcoming-cards .upcoming-card .upcoming-img .date-label .date {
+  backdrop-filter: blur(5px) brightness(50%);
+  -webkit-backdrop-filter: blur(5px) brightness(50%);
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2px 12px;
+}
+
 header {
   box-shadow: 0px 0px 10px #0F1964;
 }
@@ -17934,6 +17951,11 @@ header .mega-menu {
 
 .bg-1B2995-label {
   background-color: rgba(27, 41, 149, 0.25);
+}
+
+.arrow-icon {
+  width: 45px;
+  height: 45px;
 }
 
 /*# sourceMappingURL=main.css.map */
