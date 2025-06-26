@@ -8,8 +8,13 @@
     .pattern-img {
         z-index: -1;
         height: 647px;
-        right: -10%;
+        right: -8%;
         transform: translateX(35px);
+
+        @media screen and (max-width:1440px) {
+            right: -10%;
+            transform: translateX(35px);
+        }
     }
 }
 

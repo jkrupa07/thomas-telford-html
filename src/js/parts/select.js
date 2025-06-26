@@ -9,8 +9,12 @@ export class Select {
             minimumResultsForSearch: Infinity,
             allowClear: false,
             dropdownCssClass: "categories-select2",
-            templateResult: formatState,
-            templateSelection: formatState
+        });
+        $(".js-select3").select2({
+            closeOnSelect: true,
+            minimumResultsForSearch: Infinity,
+            allowClear: false,
+            dropdownCssClass: "categories-select3",
         });
     }
 }

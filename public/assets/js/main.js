@@ -20614,9 +20614,13 @@ var Select = /*#__PURE__*/function () {
         closeOnSelect: true,
         minimumResultsForSearch: Infinity,
         allowClear: false,
-        dropdownCssClass: "categories-select2",
-        templateResult: formatState,
-        templateSelection: formatState
+        dropdownCssClass: "categories-select2"
+      });
+      $(".js-select3").select2({
+        closeOnSelect: true,
+        minimumResultsForSearch: Infinity,
+        allowClear: false,
+        dropdownCssClass: "categories-select3"
       });
     }
   }]);
