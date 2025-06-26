@@ -1,0 +1,13 @@
+input{
+    &.footer-input{
+        height: 61px;
+        background-color: rgba($color: $white, $alpha: 0.4);
+
+        &::placeholder{
+            font-family: "dmsans-medium";
+            font-size: $font18;
+            letter-spacing: $space-0_54;
+            color: $white;
+        }
+    }
+}
