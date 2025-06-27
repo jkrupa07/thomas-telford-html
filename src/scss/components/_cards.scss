@@ -46,3 +46,16 @@
         }
     }
 }
+
+.brand-logo {
+    height: 100px;
+
+    .logo {
+        border: 1px solid $color-E6E6E6;
+
+        img {
+            max-width: 135px;
+            max-height: 80px;
+        }
+    }
+}

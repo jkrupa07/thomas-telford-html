@@ -1,0 +1,13 @@
+.event-section {
+    .filter-section {
+        .filter-btn {
+            height: 29px;
+            background-color: rgba($color: $color-858AB5, $alpha: 0.2);
+
+            &.active {
+                background-color: rgba($color: $color-1B2995, $alpha: 1.0);
+                color: $white;
+            }
+        }
+    }
+}

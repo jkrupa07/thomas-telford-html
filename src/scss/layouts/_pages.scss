@@ -2,6 +2,14 @@
     background-color: rgba($color: $color-1B2995, $alpha: 0.25);
 }
 
+.label {
+    height: 29px;
+
+    &.bg-858AB5-label {
+        background-color: rgba($color: $color-858AB5, $alpha: 0.2);
+    }
+}
+
 .arrow-icon {
     width: 45px;
     height: 45px;
