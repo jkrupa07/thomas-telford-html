@@ -7,6 +7,7 @@ export class Plugins {
     this.LeftRightSlider();
     this.BrandLogoSlider();
     this.FullImageSlider();
+    this.HistorySlider();
     this.FooterSlider();
   }
 
@@ -71,6 +72,21 @@ export class Plugins {
         slidesToScroll: 1,
         arrows: false,
         autoplay: true,
+      });
+    });
+  }
+  HistorySlider() {
+    $(document).ready(function () { 
+      $(".history-slider").slick({
+        dots: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: false,
+        prevArrow: '.history-slider-section .prev-arrow',
+        nextArrow: '.history-slider-section .next-arrow',
       });
     });
   }

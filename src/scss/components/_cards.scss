@@ -59,3 +59,39 @@
         }
     }
 }
+
+.project-container {
+    column-count: 3;
+    column-gap: 16px;
+}
+
+.history-cards {
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url('../../../public/assets/images/history-close.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 15px;
+        left: 0;
+        width: 30vw;
+        height: 1px;
+        background-color: $color-858AB5;
+        z-index: -1;
+    }
+
+    .history-card {
+        .history-img {
+            height: 216px;
+        }
+    }
+}
