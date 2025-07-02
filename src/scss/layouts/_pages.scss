@@ -19,3 +19,17 @@
         }
     }
 }
+
+.social-img-content {
+    .social-bg {
+        border: 1px solid $color-858AB5;
+        width: 45px;
+        height: 45px;
+
+        .social-img {
+            img {
+                height: 18px;
+            }
+        }
+    }
+}

@@ -17885,6 +17885,12 @@ input.footer-input::placeholder {
 .contact-form label {
   color: #fff !important;
 }
+.contact-form input::placeholder {
+  color: #fff !important;
+}
+.contact-form .form-textarea::placeholder {
+  color: #fff !important;
+}
 .contact-form .select2-container .selection .select2-selection--single .select2-selection__rendered {
   color: #fff;
 }
@@ -18008,14 +18014,6 @@ footer .footer-img {
 footer .footer-logo {
   width: 96px;
 }
-footer .footer-main .social-bg {
-  border: 1px solid #858AB5;
-  width: 45px;
-  height: 45px;
-}
-footer .footer-main .social-bg .social-img img {
-  height: 22px;
-}
 footer .footer-main .footer-brand-logo .logo-bg {
   height: 72px;
   width: 112px;
@@ -18048,8 +18046,49 @@ footer .footer-main ul li:last-child {
   }
 }
 
+.social-img-content .social-bg {
+  border: 1px solid #858AB5;
+  width: 45px;
+  height: 45px;
+}
+.social-img-content .social-bg .social-img img {
+  height: 18px;
+}
+
 .contact-us-section .label-bg {
   background-color: rgba(133, 138, 181, 0.2);
+}
+
+.banner-location-section .location-img {
+  height: 336px;
+}
+.banner-location-section .location-pin {
+  left: 60%;
+  top: 50%;
+  transform: translateY(-70%);
+}
+
+.help-card-section {
+  border-radius: 30px 30px 0px 0px;
+}
+.help-card-section .help-card {
+  height: 323px;
+}
+
+.privcy-policy .left-inner-content ul li.active a {
+  background-color: #858AB5;
+  opacity: 100% !important;
+}
+.privcy-policy .single-content:first-child {
+  padding-top: 0 !important;
+}
+.privcy-policy .pattern-img {
+  bottom: -32%;
+  left: 1%;
+  transform: translate(-50%, 0%);
+}
+.privcy-policy .pattern-img img {
+  transform: rotate(90deg);
 }
 
 .hero-section {
