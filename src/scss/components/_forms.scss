@@ -236,6 +236,18 @@ input {
         color: $white !important;
     }
 
+    input {
+        &::placeholder {
+            color: $white !important;
+        }
+    }
+
+    .form-textarea {
+        &::placeholder {
+            color: $white !important;
+        }
+    }
+
     .select2-container {
         .selection {
             .select2-selection--single {
