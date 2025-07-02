@@ -9,6 +9,15 @@
                 color: $white;
             }
         }
+
+    }
+}
+
+.more-filter {
+    .more-filter-btn {
+        width: 267px;
+        display: flex;
+        flex-direction: column;
     }
 }
 

@@ -230,7 +230,6 @@ input {
     }
 }
 
-
 .contact-form {
     label {
         color: $white !important;
@@ -296,6 +295,35 @@ input {
                 border: solid $color-1B2995;
                 border-width: 0 2px 2px 0;
                 transform: rotate(45deg);
+            }
+        }
+    }
+}
+
+.filter-btns {
+    .form-checkbox {
+        height: 24px;
+        padding-left: 34px;
+
+        input {
+            &:checked {
+                &+.checkmark {
+                    background-color: $color-1B2995;
+                    border-color: $color-858AB5;
+                }
+            }
+        }
+
+        .checkmark {
+            width: 24px;
+            border: 1px solid $color-858AB5;
+            border-radius: $radius4;
+
+            &::after {
+                left: 8px;
+                top: 4px;
+                width: 6px;
+                height: 11px;
             }
         }
     }

@@ -47,4 +47,16 @@ button,
             color: $color-1B2995;
         }
     }
+
+    &.border-1B2995-btn {
+        background-color: transparent;
+        border: 1px solid $color-1B2995;
+        color: $color-1B2995;
+
+        &:hover {
+            background-color: $color-1B2995;
+            border: 1px solid $color-1B2995;
+            color: $white;
+        }
+    }
 }

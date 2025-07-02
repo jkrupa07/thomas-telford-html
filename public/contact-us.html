@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Header</title>
+    <title>Contact Us</title>
     <!-- Favicons -->
     <link rel="icon" href="assets/images/favicon.svg" sizes="32x32" type="image/png" />
     <!-- Bootstrap core CSS -->
@@ -16,6 +16,8 @@
 <body>
     <main>
         <div class="spacing bg-1B2995 dpt-235"></div>
+
+        <!-- contact-us-section -->
         <section class="contact-us-section bg-1B2995 position-relative z-3">
             <div class="container">
                 <div class="row justify-content-between">
@@ -130,14 +132,26 @@
 
         <div class="spacing dpt-105 bg-1B2995"></div>
 
+        <!-- banner-section -->
         <section class="banner-location-section bg-1B2995">
             <div class="container">
-                <div class="position-relative">
-                    <div class="location-img">
-                        <img class="w-100 h-100 object-cover" src="./assets/images/banner-map.png" alt="map-img">
-                    </div>
-                    <div class="location-pin position-absolute">
-                        <img src="./assets/icon/blue-location.svg" alt="">
+                <div class="location-img radius15 overflow-hidden position-relative">
+                    <iframe class="w-100 h-100 object-cover"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9670.555129059952!2d-2.5549483!3d52.7026147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487a825c3792c235%3A0x2eaac57e207438bb!2sWrockwardine%2C%20Telford%20TF6%205DH%2C%20UK!5e0!3m2!1sen!2sin!4v1751433274483!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="position-absolute top-0 start-0 h-100 px-5 d-flex align-items-center">
+                        <div class="px-5 banner-content bg-white radius10 dpt-40 dpb-40">
+                            <div class="garamond font42 leading55 text-1B2995 mb-2">
+                                Get Directions
+                            </div>
+                            <div class="sans-normal font16 leading24 text-191919 dmb-20">
+                                Find us at: Chetwynd End, Newport TF10 7BY
+                            </div>
+                            <a href=""
+                                class="text-decoration-none btnA bg-1B2995-btn sans-medium font16 leading26 space-0_48 d-inline-flex align-items-center justify-content-center rounded-pill transition me-3">Get
+                                Directions</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -145,14 +159,16 @@
 
         <div class="spacing dpb-200 bg-1B2995"></div>
 
-        <section class="help-card-section position-relative z-3 bg-white dpt-75 overflow-hidden">
+        <!-- help-card-section -->
+        <section class="help-card-section position-relative z-3 bg-white dpt-75">
             <div class="container">
-                <div class="d-flex justify-content-center align-items-center garamond font57 leading55 text-1B2995 dmb-45">
+                <div
+                    class="d-flex justify-content-center align-items-center garamond font57 leading55 text-1B2995 dmb-45">
                     How to support us
                 </div>
                 <div class="row row8">
                     <div class="col-4 help-card position-relative">
-                        <div class="radius15 overflow-hidden">
+                        <div class="radius15 h-100 overflow-hidden">
                             <img class="w-100 h-100 object-cover" src="./assets/images/two-card-4.png" alt="">
                             <div class="position-absolute bottom-0 w-100">
                                 <div class="d-flex justify-content-between ms-4 me-5 mb-4">
@@ -168,7 +184,7 @@
                         </div>
                     </div>
                     <div class="col-4 help-card position-relative">
-                        <div class="radius15 overflow-hidden">
+                        <div class="radius15 h-100 overflow-hidden">
                             <img class="w-100 h-100 object-cover" src="./assets/images/two-card-4.png" alt="">
                             <div class="position-absolute bottom-0 w-100">
                                 <div class="d-flex justify-content-between ms-4 me-5 mb-4">
@@ -184,7 +200,7 @@
                         </div>
                     </div>
                     <div class="col-4 help-card position-relative">
-                        <div class="radius15 overflow-hidden">
+                        <div class="radius15 h-100 overflow-hidden">
                             <img class="w-100 h-100 object-cover" src="./assets/images/two-card-4.png" alt="">
                             <div class="position-absolute bottom-0 w-100">
                                 <div class="d-flex justify-content-between ms-4 me-5 mb-4">
@@ -203,7 +219,7 @@
             </div>
         </section>
 
-        <div class="spacing dpt-165"></div>
+        <div class="spacing dpt-100"></div>
     </main>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

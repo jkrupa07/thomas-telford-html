@@ -30,3 +30,20 @@
         }
     }
 }
+
+.offcanvas {
+    width: 720px !important;
+
+    .offcanvas-body {
+        padding: 55px 50px 55px 60px;
+
+        .close-btn {
+            width: 45px;
+            height: 45px;
+        }
+
+        .offcanvas-img {
+            height: 230px;
+        }
+    }
+}
